@@ -20,18 +20,22 @@ class IdeaListItem extends Component<Props, State> {
   state = {editing: null};
 
   handleFocus = () => this.setState({editing: this.props.idea});
+
   handleBlur = async () => {
     await this.props.onSave(this.state.editing);
     this.setState({editing: null});
   };
+
   handleChangeBody = (event: SyntheticEvent<HTMLInputElement>) =>
     this.setState({
       editing: {...this.state.editing, body: event.currentTarget.value},
     });
+
   handleChangeTitle = (event: SyntheticEvent<HTMLInputElement>) =>
     this.setState({
       editing: {...this.state.editing, title: event.currentTarget.value},
     });
+
   handleDelete = () => this.props.onDelete(this.props.idea);
 
   render() {

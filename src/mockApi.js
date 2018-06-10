@@ -1,4 +1,4 @@
-// Mock out "restful" api
+// Mock out "restful" api for demonstration/test purposes
 import {uniqueId, sortBy} from 'lodash';
 import queryString from 'query-string';
 
@@ -7,10 +7,6 @@ const ideas = [
   {id: '2', title: 'Drop Stretch', body: 'Improve Interview Coding Challenge'},
   {id: '3', title: 'Provide API', body: 'Change the game'},
 ];
-
-// GET ideas/new
-// POST ideas/update
-// POST ideas/DELETE
 
 class Response {
   constructor(json) {

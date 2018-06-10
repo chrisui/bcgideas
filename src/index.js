@@ -1,5 +1,5 @@
 // @flow
-import './mockApi'; // mock out api (fetch) for local testing
+import './mockApi'; // mock out api (fetch) for local testing/demo
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
