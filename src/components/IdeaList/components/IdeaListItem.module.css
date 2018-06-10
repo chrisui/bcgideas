@@ -1,0 +1,54 @@
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  background: #cacaca;
+  margin: 0 10px 10px 0;
+  padding: 5px;
+}
+
+.title,
+.body {
+  width: 100%;
+  border: 0;
+  background: transparent;
+}
+
+.title:focus,
+.body:focus {
+  border: 1px solid #a8a8a8;
+}
+
+.title {
+  flex: 1;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.title:focus {
+  padding: 4px;
+}
+
+.body {
+  flex: 3;
+  padding: 5px;
+  resize: none;
+}
+
+.body:focus {
+  padding: 4px;
+}
+
+.delete {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+}
+
+.root:hover .delete {
+  display: block;
+}

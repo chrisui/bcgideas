@@ -1,0 +1,24 @@
+.header {
+  height: 3em;
+  background: #f7f7f7;
+  display: flex;
+  padding: 0 0.5em;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+}
+
+.header h1 {
+  font-size: 1.5em;
+  color: black;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.sort {
+  margin-right: 5px;
+}

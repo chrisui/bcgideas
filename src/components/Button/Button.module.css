@@ -1,0 +1,9 @@
+.root {
+  display: inline-block;
+  background: #0081af;
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  border: 0;
+  font-size: 1em;
+}

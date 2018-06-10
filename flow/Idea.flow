@@ -1,0 +1,6 @@
+declare type Idea = {
+  id: string,
+  createdAt: string,
+  title: string,
+  body: string,
+};
